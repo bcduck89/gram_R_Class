@@ -1,0 +1,133 @@
+Version 0.80.1
+------------------------------------------------------------------------------
+  * fix duplicated Morphological,POS results cause by duplicated word on dictionaries.
+  * autoSpacing for input sentence(using unigram HMM).
+  * show information when unable to process sentences on extractNoun, SimplePos22 ,SimplePos09, MorphAnalyzer and won't stop by error.  
+  * can apply multiple sentences with cahracter vector on extractNoun, SimplePos22 ,SimplePos09, MorphAnalyzer.
+  
+
+Version 0.80.0
+------------------------------------------------------------------------------
+  * make more effective memory management for big dictionaries.
+  * up to one million words can be used for text analysis using new NIADic package.
+  * added 'buildDictionary()', 'useNIADic()' for additional dictionaries.
+  * SQLite for dictionary management.
+  * apply new sentence segmentation plugins.
+  * support Scala for plugin development for HanNanum.
+  * disable warning for long Eojeol sentence inputs. 
+  * fix infinite wait when input abnormal sentences.
+  * fix 'concordance_str()', thanks Taekyung Kim. 
+  * deprecated 'mergeUserDic()'
+
+
+Version 0.76.9
+------------------------------------------------------------------------------
+  * new functions added(concordance_*, mutualinformation).
+  * fix OutOfMemoryError on mac osx with R 3.0.x.
+  * added references on manual. 
+  * suppress one NOTE.
+
+Version 0.76.8
+------------------------------------------------------------------------------
+  * remove deprecated functions.
+  * decreasing package size dramatically. 
+  * set Null on -Xmx to use JVM's default optimal parameters. 
+
+Version 0.76.7
+------------------------------------------------------------------------------
+  * function to view summary of dictionary using statDic().
+  * fix bugs on SimplePosXX().
+
+Version 0.76.6
+------------------------------------------------------------------------------
+  * check more cases on raw input sentences.
+  * secondary JVM option to default.
+
+Version 0.76.5
+------------------------------------------------------------------------------
+  * fix path with platform independent way.
+  * make more easy on mergeUserDic().  
+  * now support vector on is.*()s.
+
+Version 0.76
+------------------------------------------------------------------------------
+  * make interface with HanNanum Analyzer for direct access to zipped dictionaries. 
+  * added useSejongDic(), useSystemDic() functions.
+  * no need to use explicitly UTF-8 string on 'is.~' functions.
+
+Version 0.75.1
+------------------------------------------------------------------------------
+  * fix Windows path problem.
+
+Version 0.75
+------------------------------------------------------------------------------
+  * added is.jaeum, is.moeum, is.ascii functions.
+  * extract out all dictionary to Sejong package.
+  * make some error to warning for continuous processing.
+
+
+Version 0.73
+------------------------------------------------------------------------------
+  * add messages on is.hangul and is.jamo if input is not UTF-8.
+  * set -Xmx512m when the time user system is poor on memory. 
+  * fix issue "Continuous "[:space:]" in sentence can make infinite wait."
+
+
+Version 0.7
+------------------------------------------------------------------------------
+  * new dictionary added which from Sejong projects
+  * added example 
+  * Set "dontrun" on example code because Windows encoding problems.
+  * Warning message may appear if system doesn't have Hangul encoding ability(no warning on UTF-8).
+
+
+Version 0.0-9.3
+------------------------------------------------------------------------------
+  * added user dictionary manage functions.
+  * to -Xmx1024m for big dictionary size
+  * supports JRE 1.5
+
+
+
+Version 0.0-9.2 
+------------------------------------------------------------------------------
+  * add is.jamo() and fix is.hangul()  
+  * add tag name converter for future use
+  * add edit distance cost table for Hangul for future use
+  * fix documentation 
+
+Version 0.0-9.0 (2012-01-03)
+------------------------------------------------------------------------------
+  * fixing bug on HangulAutomata function 
+  * added more test case
+
+
+Version 0.0-8.3 (2011-12-23)
+------------------------------------------------------------------------------
+  * added input string encoding detection function(can only detect UTF-8,16,32)
+  * added Hangul automata logic, now can convert jamo sequences to Hangul syllable.
+  * added user dic reloading function(for future use) 
+
+
+
+Version 0.0-8.1 (2011-12-19)
+------------------------------------------------------------------------------
+  * full support Jamo and keystrokes converting
+  * add link to github wiki for examples using Hangul
+
+
+
+
+Version 0.0-8.0 (2011-12-09)
+------------------------------------------------------------------------------
+  * improved performance more than 100 times on functions which related with Hannanum Analyzer.
+  * set -Xmx512m for Java VM.
+  * Java sources are added.
+
+
+
+Version 0.0-7.4 (2011-10-12)
+------------------------------------------------------------------------------
+
+  * fix encoding problems when in Windows.
+ 

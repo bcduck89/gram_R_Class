@@ -1,0 +1,38 @@
+HangulAutomata          do Hangul automata
+KtoS                    KAIST tag to Sejong tag
+MorphAnalyzer           Hannanum morphological analyzer interface
+                        function
+SimplePos09             POS tagging by using 9 KAIST tags
+SimplePos22             POS tagging by using 22 KAIST tags
+StoK                    Sejong tag to KAIST tag
+backupUsrDic            use for backup current dic_user.txt Utility
+                        function for backup dic_user.txt file to backup
+                        directory.
+buildDictionary         buildDictionary
+concordance_file        concordance for input text file
+concordance_str         concordance for input text vector
+convertHangulStringToJamos
+                        convertion function Hangul string to Jamos
+convertHangulStringToKeyStrokes
+                        convertion function Hangul string to keyStrokes
+convertTag              tag name converter
+editweights             Keystroke misspell cost table
+extractNoun             Noun extractor for Hangul
+get_dictionary          Get Dictionary
+install_NIADic          install_NIADic
+is.ascii                check if sentence is all ASCII
+is.hangul               check if sentence is all Hangul
+is.jaeum                check if sentence is all Jaeum
+is.jamo                 check if sentence is all Jamo
+is.moeum                check if sentence is all Moeum
+mergeUserDic            appending or replacing with new data.frame
+mutualinformation       mutual information for input text
+reloadAllDic            reload all Hannanum analyzer dictionary
+reloadUserDic           reload dictionaries for specific functions
+restoreUsrDic           use for restoring backuped dic_user.txt
+scala_library_install   scala_library_install
+statDic                 summary of dictionaries
+tags                    tag names
+useNIADic               use Insighter and Woorimalsam dictionary
+useSejongDic            use Sejong noun dictionary
+useSystemDic            use system default dictionary
